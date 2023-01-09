@@ -1,0 +1,104 @@
+$Dark-cyan: hsl(158, 36%, 37%);
+$Cream: hsl(30, 38%, 92%);
+
+$Very-dark-blue: hsl(212, 21%, 14%);
+$Dark-grayish-blue: hsl(228, 12%, 48%);
+$White: hsl(0, 0%, 100%);
+
+$Fuente1: 'Fraunces', serif;
+$Fuente2:'Montserrat', sans-serif;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: $Cream;
+}
+
+main .card {
+    max-width: 32rem;
+    min-height: 60rem;
+    background-color: $White;
+    border-radius: 10px;
+    &__img img{
+        width: 100%;
+        min-height: 120%;
+        border-radius: 10px 10px 0 0;
+    }
+    &__description {
+        padding: 2em;
+        .description--title{
+            font-size: 1.2rem;
+            font-family: $Fuente2;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin: 1em 0;
+            color: $Dark-cyan;
+        }
+
+        .description--francais {
+            font-size: 3rem;
+            font-family: $Fuente1;
+            font-weight: bold;
+            line-height: 30px;
+            margin-bottom: 0.5em;
+        }
+
+        .description--about {
+            font-family: $Fuente2;
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 2.2rem;
+            color: $Dark-grayish-blue;
+            margin-bottom: 2.5em;
+        }
+
+        .description--price {
+            @extend .description--francais;
+            color: $Dark-cyan;
+            span {
+                position: relative;
+                top: -0.4em;
+                font-size: 1.4rem;
+                margin-left: 1.3em;
+                color: $Dark-grayish-blue;
+                text-decoration: line-through;
+            }
+        }
+
+        .description--button {
+            width: 100%;
+            background-color: $Dark-cyan;
+            min-height: 3.5em;
+            border-radius: 10px;
+            border: 0ch;
+            color: $White;
+            font-weight: 700;
+            font-family: $Fuente2;
+            span {
+                background-image: url('./images/icon-cart.svg');
+                max-width: 100%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+        }
+
+    }
+}
