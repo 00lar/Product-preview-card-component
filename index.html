@@ -14,8 +14,14 @@
 
   <main>
     <div class="card">
+
       <div class="card__img">
-        <img src="/images/image-product-mobile.jpg" srcset=" images/image-product-mobile.jpg 320w, images/image-product-desktop.jpg 1440w" sizes=" (max-width: 1440px) 320px,(min-width: 1024px) 1440px" alt="">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/image-product-desktop.jpg">
+          <source media="(min-width: 320px)" srcset="images/image-product-mobile.jpg">
+          <img src="/images/image-product-mobile.jpg" alt="">
+        </picture>
+        
       </div>
       <div class="card__description">
           <p class="description--title">Perfume</p>
@@ -24,6 +30,7 @@
           <h2 class="description--price">$149.99<span>$169.99</span></h2>
           <button class="description--button"><span>i</span> Add to Cart</button>
       </div>
+
     </div>
   </main>
 
