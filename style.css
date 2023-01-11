@@ -72,7 +72,6 @@ main .card__description .description--price span {
   font-size: 1.4rem;
   margin-left: 1.3em;
   color: hsl(228deg, 12%, 48%);
-  text-decoration: line-through;
 }
 main .card__description .description--button {
   width: 100%;
