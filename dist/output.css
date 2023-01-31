@@ -513,9 +513,81 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-blue-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-5\/6 {
+  height: 83.333333%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.self-center {
+  align-self: center;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .bg-cream {
@@ -523,15 +595,76 @@ video {
   background-color: hsl(30 38% 92% / var(--tw-bg-opacity));
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-Primary {
+  --tw-bg-opacity: 1;
+  background-color: hsl(158 36% 37% / var(--tw-bg-opacity));
+}
+
+.bg-ProductMobile {
+  background-image: url('/images/product-mobile.jpg');
+}
+
+.bg-CartIcon {
+  background-image: url('/images/icon-cart.svg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.font-Monserrat {
+  font-family: Monserrat, sans-serif;
+}
+
+.font-Franceus {
+  font-family: Franceus, serif;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.underline {
-  text-decoration-line: underline;
+.leading-8 {
+  line-height: 2rem;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
+.text-grayish {
+  --tw-text-opacity: 1;
+  color: hsl(228 12% 48% / var(--tw-text-opacity));
+}
+
+.text-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(158 36% 37% / var(--tw-text-opacity));
+}
+
+.line-through {
+  text-decoration-line: line-through;
 }

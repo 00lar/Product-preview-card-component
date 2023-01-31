@@ -7,11 +7,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body class="bg-cream">
-    <h1 class="text-3xl font-bold underline bg-blue-200">Hello world!</h1>
+    <main class="w-screen h-screen flex justify-center items-center">
+      <section
+        class="w-11/12 h-5/6 bg-white grid grid-cols-1 grid-rows-3 rounded-lg"
+      >
+        <div class="bg-ProductMobile rounded-t-lg bg-cover w-full"></div>
+        <section class="p-4 space-y-4">
+          <h2
+            class="font-Monserrat text-sm font-medium tracking-widest text-grayish"
+          >
+            PERFUME
+          </h2>
+          <h1 class="font-Franceus font-bold leading-8 text-4xl">
+            Gabrielle Essence Eau De Partum
+          </h1>
+          <p class="text-grayish">
+            A florar, solar and voluptuous <br />
+            interpetration composed by Oliver <br />
+            Polge, Perfumer-Creator for the house of CHANEL
+          </p>
+        </section>
+        <section class="p-4">
+          <p class="text-cyan font-Franceus font-bold text-4xl">
+            $149.99
+            <span class="line-through text-sm ml-5 text-grayish font-medium"
+              >$169.99</span
+            >
+          </p>
+          <button class="bg-Primary w-11/12">
+            <span class="bg-CartIcon"></span> Add to cart
+          </button>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
