@@ -518,6 +518,11 @@ video {
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
 }
 
+.bg-cream {
+  --tw-bg-opacity: 1;
+  background-color: hsl(30 38% 92% / var(--tw-bg-opacity));
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
